@@ -1,0 +1,9 @@
+<span class="glyphicon glyphicon-star" class="url"
+    [class.glyphicon-star] = "isLiked"
+    [class.glyphicon-star-empty] = "!isLiked"
+    (click) = "toggleClick()" 
+    (mouseenter) ="mouseEnter(true)"  
+    (mouseleave) ="mouseLeave(false)"
+    [class.url]="hovered"
+    ></span>
+    <span>{{counter}}</span>
